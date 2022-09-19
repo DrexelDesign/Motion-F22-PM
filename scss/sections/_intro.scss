@@ -1,0 +1,39 @@
+/* =============
+    Intro
+============= */
+
+#intro{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-areas: ". intro .";
+    background-color: $red;
+
+    @include lg{
+        grid-template-columns: auto 80% auto;
+    }
+
+    >div{
+        grid-area: intro;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        section{
+            // background-color: $white;
+            text-align: center;
+            h1{
+                color: $white;
+                font-weight: 300;
+                font-size: rem-calc(60);
+            }
+
+            h3{
+                color: $gunmetal;
+                font-weight: 400;
+            }
+        }
+
+
+    }
+}

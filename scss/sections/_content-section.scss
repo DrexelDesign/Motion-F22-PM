@@ -1,0 +1,185 @@
+/* =============
+    Content Section
+============= */
+.content-section {
+    background-color: $greyLite;
+    display: grid;
+    grid-template-areas: ". content .";
+    grid-template-columns: 20px auto 20px;
+    min-height: 100vh;
+    @include md {
+        grid-template-columns: auto 80% auto;
+    }
+    @include lg {
+        grid-template-columns: auto 60% auto;
+    }
+
+    > div {
+        align-items: center;
+        display: flex;
+        grid-area: content;
+        justify-content: center;
+
+        section {
+            @include lg {
+                display: grid;
+                grid-template-columns: 40% auto;
+            }
+
+            article {
+                background-color: $white;
+                padding: 20px;
+
+                .circle {
+                    align-items: center;
+                    background-color: $red;
+                    border-radius: 100px;
+                    color: $white;
+                    display: flex;
+                    font-size: rem-calc(20);
+                    font-weight: 500;
+                    height: 50px;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                    width: 50px;
+                }
+
+                h1 {
+                    font-weight: 500;
+                    margin-bottom: 15px;
+                }
+            }
+
+            .right-side {
+                background-color: $gunmetal;
+                display: flex;
+                justify-content: center;
+
+                > div {
+                    background-image: url("../img/animation.gif");
+                    background-repeat: no-repeat;
+                    height: 300px;
+                    margin: 0 auto;
+                    width: 500px;
+                }
+            }
+        }
+    }
+}
+
+#timing {
+    .right-side {
+        > div {
+            background-position: -67px -250px;
+        }
+    }
+}
+
+#easing {
+    .right-side {
+        > div {
+            background-position: -648px -180px;
+            height: 350px;
+        }
+    }
+}
+
+#mass {
+    .right-side {
+        > div {
+            background-position: -1227px -250px;
+        }
+    }
+}
+
+#anticipation {
+    .right-side {
+        > div {
+            background-position: -67px -833px;
+        }
+    }
+}
+
+#arcs {
+    .right-side {
+        > div {
+            background-position: -648px -833px;
+        }
+    }
+}
+
+#squash {
+    .right-side {
+        > div {
+            background-position: -1227px -716px;
+            height: 450px;
+        }
+    }
+}
+
+#follow {
+    .right-side {
+        > div {
+            background-position: -67px -1410px;
+        }
+    }
+}
+
+#exaggeration {
+    .right-side {
+        > div {
+            background-position: -648px -1340px;
+            height: 350px;
+        }
+    }
+}
+
+#secondary {
+    .right-side {
+        > div {
+            background-position: -1227px -1340px;
+            height: 350px;
+        }
+    }
+}
+
+#appeal {
+    .right-side {
+        > div {
+            background-size: contain;
+            height: 600px;
+        }
+    }
+}
+
+#links {
+    article {
+        h1 {
+            color: $red;
+            margin: 10px 0 0;
+        }
+    }
+
+    article+div {
+        background-color: $gunmetal;
+        padding: 20px 10px 10px 20px;
+
+        a:link,
+        a:visited {
+            color: $white;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            transition: 0.25s;
+
+            i {
+                margin-left: 10px;
+            }
+        }
+
+        a:active,
+        a:hover {
+            color: $red;
+        }
+    }
+}

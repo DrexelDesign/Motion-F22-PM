@@ -1,0 +1,22 @@
+#demo-1{
+    margin-top: 20vh;
+    display: grid;
+    grid-template-columns: auto 60vw auto;
+    grid-template-areas: ". demo-1 .";
+
+    section{
+        grid-area: demo-1;
+        background-color: var(--charcoal);
+        height: 40vh;
+
+        h1{
+            color: var(--white);
+        }
+
+        #aqua-box{
+            height: 100px;
+            width: 100px;
+            background-color: var(--aqua);
+        }
+    }
+}

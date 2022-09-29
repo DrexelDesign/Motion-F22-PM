@@ -1,0 +1,60 @@
+#hero{
+    background-image: url("../img/hero.jpg");
+    height: 60vh;
+    background-size: cover;
+    background-position: center bottom;
+
+    @include md{
+        height: 70vh;
+    }
+
+    @include lg{
+        height: 80vh;
+    }
+
+    #overlay{
+        background-color: rgba(var(--blackO),0.5);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h1{
+            color: var(--white);
+            font-size: rem-calc(40);
+
+            @include md{
+                font-size: rem-calc(50);
+            }
+        
+            @include lg{
+                font-size: rem-calc(90);
+            }
+
+            span{
+                color: rgba(var(--whiteO),0.25);
+            }
+        }
+        
+        button{
+            border: none;
+            background-color: var(--red);
+            color: var(--white);
+            font-size: rem-calc(20);
+            padding: 20px 30px;
+            border-radius: 8px;
+            margin-top: 24px;
+            cursor: pointer;
+
+            @include md{
+                font-size: rem-calc(25);
+                padding: 30px 50px;
+            }
+
+            i{
+                margin-left: 8px;
+            }
+        }
+    }
+}

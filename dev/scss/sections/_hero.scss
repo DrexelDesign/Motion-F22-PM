@@ -1,0 +1,92 @@
+#hero{
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+
+    #overlay{
+        background-color: rgba(var(--blackO),0.65);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        section{
+            @include lg{
+                display: flex;
+            }
+
+            div{
+                h1{
+                    color: var(--white);
+                    font-family: 'Gruppo', cursive;
+                    font-weight: 400;
+                    font-size: rem-calc(30);
+
+                    @include md{
+                        font-size: rem-calc(50);
+                    }
+
+                    @include lg{
+                        font-size: rem-calc(90);
+                    }
+                }
+    
+                h4{
+                    color: var(--white);
+                    font-family: 'Gruppo', cursive;
+                    font-weight: 400;
+                    font-size: rem-calc(20);
+
+                    @include md{
+                        font-size: rem-calc(40);
+                    }
+                }
+            }
+
+            aside{
+                
+                @include lg{
+                    display: flex;
+                    align-items: center;
+                    margin-left: 5vw;
+                }
+
+                button{
+                    border: none;
+                    background-color: var(--red);
+                    color: var(--white);
+                    padding: 20px 15px;
+                    font-size: rem-calc(20);
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    margin-top: 24px;
+                    cursor: pointer;
+                    margin-right: 4px;
+
+                    @include md{
+                        font-size: rem-calc(23);
+                        padding: 20px;
+                    }
+
+                    @include md{
+                        font-size: rem-calc(25);
+                        padding: 30px;
+                    }
+    
+                    i{
+                        margin-left: 16px;
+                    }
+                }
+
+                form{
+                    input{
+                        border: none;
+                        padding: 10px;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+    }
+}

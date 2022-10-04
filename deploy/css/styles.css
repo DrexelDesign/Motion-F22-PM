@@ -14,7 +14,9 @@ html {
   --white: #fff;
   --black: #000;
   --charcoal: #363636;
-  --aqua: #34fbfe;
+  --aqua: #1de8f7;
+  --yellow: #efe22e;
+  --red: #ef4b2e;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -382,14 +384,22 @@ textarea {
   position: relative;
   z-index: 10;
 }
-#demo-1 section .aqua-box {
+#demo-1 section div {
+  margin-top: 32px;
+}
+#demo-1 section #aqua-box {
   height: 100px;
   width: 100px;
   background-color: var(--aqua);
 }
-#demo-1 section .aqua-box #dot {
-  height: 10px;
-  width: 10px;
-  background-color: var(--black);
+#demo-1 section #yellow-rect {
+  height: 100px;
+  width: 200px;
+  background-color: var(--yellow);
+}
+#demo-1 section #red-circle {
+  height: 100px;
+  width: 100px;
+  background-color: var(--red);
   border-radius: 100%;
 }

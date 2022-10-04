@@ -16,19 +16,27 @@
             z-index: 10;
         }
 
-        .aqua-box{
+        div{
+            margin-top: 32px;
+        }
+
+        #aqua-box{
             height: 100px;
             width: 100px;
             background-color: var(--aqua);
-            // border-radius: 100%;
-            // transform-origin: center bottom;
+        }
 
-            #dot{
-                height: 10px;
-                width: 10px;
-                background-color: var(--black);
-                border-radius: 100%;
-            }
+        #yellow-rect{
+            height: 100px;
+            width: 200px;
+            background-color: var(--yellow);
+        }
+
+        #red-circle{
+            height: 100px;
+            width: 100px;
+            background-color: var(--red);
+            border-radius: 100%;
         }
     }
 }

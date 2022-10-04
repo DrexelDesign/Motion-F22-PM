@@ -4,7 +4,7 @@
     {
       "name" : "Process All Remaining Files and Folders",
       "stepType" : 1,
-      "uuidString" : "14B50008-313C-4DE8-ABA7-925CD72E6703"
+      "uuidString" : "2D98CC5F-45F9-46F2-8AEF-2F553619B0BE"
     }
   ],
   "creatorBuild" : "34434",
@@ -44,7 +44,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dev\/content\/demo-1.html",
       "oF" : 0
     },
@@ -85,17 +85,17 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/index.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
     },
     "\/dev\/js\/scripts.js" : {
-      "bF" : 0,
+      "bF" : 4,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/dev\/js\/scripts-min.js",
-      "oF" : 0,
+      "oAP" : "\/deploy\/js\/scripts-min.js",
+      "oF" : 2,
       "sC" : 3,
       "tS" : 0
     },
@@ -273,8 +273,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/scss\/styles.css",
-      "oF" : 0,
+      "oAP" : "\/deploy\/css\/styles.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -309,11 +309,11 @@
 
   },
   "projectAttributes" : {
-    "creationDate" : 686003502.48849797,
+    "creationDate" : 669227926.75338697,
     "displayValue" : "Motion-F22-PM",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "brackets_teal",
-    "iconImageWasSetByUser" : 0
+    "iconImageName" : "meme-dunnoGirl",
+    "iconImageWasSetByUser" : 1
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -736,7 +736,7 @@
         "optionString" : "'always', {'null': 'always'}"
       },
       "for-direction" : {
-        "active" : 1
+        "active" : 0
       },
       "func-call-spacing" : {
         "active" : 0,
@@ -767,7 +767,7 @@
         "optionString" : "{'before': true, 'after': false}"
       },
       "getter-return" : {
-        "active" : 1,
+        "active" : 0,
         "optionString" : "{'allowImplicit': false}"
       },
       "grouped-accessor-pairs" : {
@@ -892,7 +892,7 @@
         "active" : 0
       },
       "no-async-promise-executor" : {
-        "active" : 1
+        "active" : 0
       },
       "no-await-in-loop" : {
         "active" : 0
@@ -919,10 +919,10 @@
       },
       "no-confusing-arrow" : {
         "active" : 0,
-        "optionString" : "{'allowParens': true, 'onlyOneSimpleParam': false}"
+        "optionString" : "{'allowParens': true}"
       },
       "no-console" : {
-        "active" : 1,
+        "active" : 0,
         "optionString" : "{'allow': ['warn', 'error']}"
       },
       "no-const-assign" : {
@@ -1014,7 +1014,7 @@
       },
       "no-extra-parens" : {
         "active" : 0,
-        "optionString" : "'all'"
+        "optionString" : "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false, 'enforceForSequenceExpressions': false, 'enforceForNewInMemberExpressions': false}"
       },
       "no-extra-semi" : {
         "active" : 1
@@ -1099,7 +1099,7 @@
         "optionString" : "{'groups': [['+', '-', '*', '\/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
       },
       "no-mixed-spaces-and-tabs" : {
-        "active" : 1,
+        "active" : 0,
         "optionString" : ""
       },
       "no-multi-assign" : {
@@ -1165,7 +1165,7 @@
         "active" : 0
       },
       "no-prototype-builtins" : {
-        "active" : 1
+        "active" : 0
       },
       "no-redeclare" : {
         "active" : 1,
@@ -1220,10 +1220,10 @@
       },
       "no-shadow" : {
         "active" : 0,
-        "optionString" : "{'builtinGlobals': false, 'hoist': 'functions', 'allow': [], 'ignoreOnInitialization': false}"
+        "optionString" : "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
       },
       "no-shadow-restricted-names" : {
-        "active" : 1
+        "active" : 0
       },
       "no-sparse-arrays" : {
         "active" : 1
@@ -1260,7 +1260,7 @@
       },
       "no-underscore-dangle" : {
         "active" : 0,
-        "optionString" : "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'allowAfterThisConstructor': false, 'enforceInMethodNames': false, 'enforceInClassFields': false, 'allowFunctionParams': true}"
+        "optionString" : "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'allowAfterThisConstructor': false, 'enforceInMethodNames': false, 'allowFunctionParams': true}"
       },
       "no-unexpected-multiline" : {
         "active" : 1
@@ -1306,7 +1306,7 @@
       },
       "no-use-before-define" : {
         "active" : 0,
-        "optionString" : "{'functions': true, 'classes': true, 'variables': true, 'allowNamedExports': false}"
+        "optionString" : "{'functions': true, 'classes': true, 'variables': true}"
       },
       "no-useless-backreference" : {
         "active" : 1
@@ -1315,7 +1315,7 @@
         "active" : 0
       },
       "no-useless-catch" : {
-        "active" : 1
+        "active" : 0
       },
       "no-useless-computed-key" : {
         "active" : 0,
@@ -1328,7 +1328,7 @@
         "active" : 0
       },
       "no-useless-escape" : {
-        "active" : 1
+        "active" : 0
       },
       "no-useless-rename" : {
         "active" : 0,
@@ -1352,7 +1352,7 @@
         "active" : 0
       },
       "no-with" : {
-        "active" : 1
+        "active" : 0
       },
       "nonblock-statement-body-position" : {
         "active" : 0,
@@ -1487,7 +1487,7 @@
       },
       "sort-keys" : {
         "active" : 0,
-        "optionString" : "'asc', {'caseSensitive': true, 'natural': false, 'minKeys': 2, 'allowLineSeparatedGroups': false}"
+        "optionString" : "'asc', {'caseSensitive': true, 'natural': false, 'minKeys': 2}"
       },
       "sort-vars" : {
         "active" : 0,
@@ -1728,7 +1728,7 @@
       "autoOutputPathReplace2" : "",
       "autoOutputPathStyle" : 0,
       "optimizerType" : 1,
-      "quality" : 90,
+      "quality" : 100,
       "webpOptimizationPresetUUID" : "lpckwebp-none",
       "webpRGBQuality" : 75
     },

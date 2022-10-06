@@ -14,27 +14,32 @@ var mainTL = gsap.timeline();
 mainTL.add(heroAnimation());
 
 
+var heroSizeNumber = 1;
 
+let mm = gsap.matchMedia();
 
+mm.add("(min-width: 768px)", () => {
+  // desktop setup code here...
+  heroSizeNumber = 2;
+});
+
+mm.add("(max-width: 767px)", () => {
+  // mobile setup code here...
+  heroSizeNumber = 1.25;
+});
 
 let trailBtn = document.querySelector("#trails-btn");
 
-var buttonAnimation = gsap.timeline();
-buttonAnimation.to("#trails-btn",{duration:1, scale:3});
-//         .to("#trails-btn i",{duration: 1, rotateY:180})
-//         .to("#first-line",{duration: 1, alpha:0, y:50})
-//         .to("#second-line",{duration: 1, alpha:0, y:20});
-
+var buttonAnimation = gsap.timeline({paused:true});
+buttonAnimation.to("#trails-btn",{duration:0.25, scale:heroSizeNumber},"goAway")
+        .to("#trails-btn i",{duration: 0.25, rotateY:180})
+        .to("#first-line",{duration: 0.25, alpha:0, y:50},"goAway")
+        .to("#second-line",{duration: 0.25, alpha:0, y:20},"goAway");
 
 trailBtn.addEventListener("mouseover",function(){
-   
+   buttonAnimation.play();
 })
 
 trailBtn.addEventListener("mouseout",function(){
-    // gsap.to("#trails-btn",{duration:1, scale:1});
-
-    // gsap.to("#trails-btn i",{duration: 1, rotateY:0});
-
-    // gsap.to("#first-line",{duration: 1, alpha:1, y:0});
-    // gsap.to("#second-line",{duration: 1, alpha:1, y:0});
+    buttonAnimation.reverse();
 })

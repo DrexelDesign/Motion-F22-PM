@@ -7,7 +7,7 @@
       "uuidString" : "2D98CC5F-45F9-46F2-8AEF-2F553619B0BE"
     }
   ],
-  "creatorBuild" : "34418",
+  "creatorBuild" : "34434",
   "files" : {
     "\/assets\/daniel-leone-g30P1zcOzXo-unsplash.jpg" : {
       "ft" : 16384,
@@ -15,6 +15,32 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/assets\/daniel-leone-g30P1zcOzXo-unsplash.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/david-marcu-78A265wPiO4-unsplash.jpg" : {
+      "ft" : 16384,
+      "iS" : 883296,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/david-marcu-78A265wPiO4-unsplash.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/guillaume-briard-lSXpV8bDeMA-unsplash.jpg" : {
+      "ft" : 16384,
+      "iS" : 3209498,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/guillaume-briard-lSXpV8bDeMA-unsplash.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -34,12 +60,38 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/img\/hero.jpg" : {
+    "\/deploy\/img\/heroes\/hero-2.jpg" : {
       "ft" : 16384,
-      "iS" : 98619,
+      "iS" : 363485,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/hero.jpg",
+      "oAP" : "\/deploy\/img\/heroes\/hero-2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/heroes\/hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 129853,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/heroes\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/hiking\/hiking.jpg" : {
+      "ft" : 16384,
+      "iS" : 656755,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hiking\/hiking.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -66,12 +118,36 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/dev\/content\/demo.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/demo.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/hero-2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/hero-2.html",
+      "oF" : 0
+    },
     "\/dev\/content\/hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/hero.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/hiking.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/hiking.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -275,6 +351,36 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/_demo.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_demo.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_hero-2.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_hero-2.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/sections\/_hero.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -285,6 +391,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_hero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_hiking.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_hiking.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -338,8 +459,8 @@
     "creationDate" : 669227926.75338697,
     "displayValue" : "Motion-F22-PM",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "brackets-ucla",
-    "iconImageWasSetByUser" : 0
+    "iconImageName" : "meme-doge",
+    "iconImageWasSetByUser" : 1
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -948,7 +1069,7 @@
         "optionString" : "{'allowParens': true}"
       },
       "no-console" : {
-        "active" : 1,
+        "active" : 0,
         "optionString" : "{'allow': ['warn', 'error']}"
       },
       "no-const-assign" : {
@@ -1046,7 +1167,8 @@
         "active" : 1
       },
       "no-fallthrough" : {
-        "active" : 1
+        "active" : 1,
+        "optionString" : "{'allowEmptyCase': false}"
       },
       "no-floating-decimal" : {
         "active" : 0

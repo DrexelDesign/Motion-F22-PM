@@ -14,8 +14,8 @@ html {
   --white: #fff;
   --whiteO: 255,255,255;
   --black: #000;
-  --blackO: 0,0,0;
-  --red: #b2240a;
+  --charcoal: #333333;
+  --red: #e23636;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -334,10 +334,14 @@ template {
     Typography
 ============= */
 body {
-  font-family: "Righteous", cursive;
+  font-family: "Rubik", sans-serif;
 }
 
-h1 {
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+p {
   margin: 0;
 }
 
@@ -372,62 +376,159 @@ textarea {
     Footer
 ============= */
 #hero {
-  background-image: url("../img/hero.jpg");
-  height: 60vh;
+  background-image: url("../img/heroes/hero.jpg");
   background-size: cover;
-  background-position: center bottom;
+  background-position: bottom;
+  height: 90vh;
 }
 @media (min-width: 768px) {
-  #hero {
-    height: 70vh;
-  }
-}
-@media (min-width: 1024px) {
   #hero {
     height: 80vh;
   }
 }
-#hero #overlay {
-  background-color: rgba(var(--blackO), 0.5);
+@media (min-width: 1024px) {
+  #hero {
+    height: 90vh;
+  }
+}
+#hero #bg {
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-#hero #overlay h1 {
+#hero #bg h1 {
+  font-family: "Righteous", cursive;
   color: var(--white);
   font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0;
 }
 @media (min-width: 768px) {
-  #hero #overlay h1 {
-    font-size: 3.125rem;
+  #hero #bg h1 {
+    font-size: 3.75rem;
   }
 }
-@media (min-width: 1024px) {
-  #hero #overlay h1 {
-    font-size: 5.625rem;
-  }
+#hero #bg h1 span {
+  color: var(--white);
 }
-#hero #overlay h1 span {
-  color: rgba(var(--whiteO), 0.25);
-}
-#hero #overlay button {
+#hero #bg button {
   border: none;
   background-color: var(--red);
   color: var(--white);
-  font-size: 1.25rem;
   padding: 20px 30px;
   border-radius: 8px;
+  font-size: 1.25rem;
   margin-top: 24px;
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  #hero #overlay button {
+  #hero #bg button {
     font-size: 1.5625rem;
-    padding: 30px 50px;
   }
 }
-#hero #overlay button i {
-  margin-left: 8px;
+#hero #bg button i {
+  margin-left: 12px;
+}
+
+#hiking {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hiking .";
+  margin: 24px 0;
+}
+@media (min-width: 768px) {
+  #hiking {
+    grid-template-columns: auto 90vw auto;
+    margin: 48px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #hiking {
+    grid-template-columns: auto 80vw auto;
+    margin: 64px 0;
+  }
+}
+@media (min-width: 1440px) {
+  #hiking {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+#hiking > div {
+  grid-area: hiking;
+}
+@media (min-width: 768px) {
+  #hiking > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+#hiking > div section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+#hiking > div section h1 {
+  font-weight: 300;
+  font-size: 3.125rem;
+}
+#hiking > div aside {
+  height: 100vh;
+}
+@media (min-width: 768px) {
+  #hiking > div aside {
+    height: 70vh;
+  }
+}
+#hiking > div aside div {
+  background-image: url("../img/hiking/hiking.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+#hero-2 {
+  background-image: url("../img/heroes/hero-2.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  #hero-2 {
+    height: 80vh;
+  }
+}
+@media (min-width: 1024px) {
+  #hero-2 {
+    height: 70vh;
+  }
+}
+#hero-2 > div {
+  text-align: center;
+  color: var(--white);
+}
+#hero-2 > div h1 {
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 5rem;
+}
+
+#demo {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  border: 1px solid greenyellow;
+}
+#demo #box {
+  height: 100px;
+  width: 100px;
+  background-color: var(--red);
 }

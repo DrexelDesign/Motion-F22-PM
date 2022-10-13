@@ -1,19 +1,19 @@
 #hero{
-    background-image: url("../img/hero.jpg");
-    height: 60vh;
+    background-image: url("../img/heroes/hero.jpg");
     background-size: cover;
-    background-position: center bottom;
+    background-position: bottom;
+    height: 90vh;
 
     @include md{
-        height: 70vh;
-    }
-
-    @include lg{
         height: 80vh;
     }
 
-    #overlay{
-        background-color: rgba(var(--blackO),0.5);
+    @include lg{
+        height: 90vh;
+    }
+
+    #bg{
+        background-color: rgba(0,0,0,0.5);
         height: 100%;
         display: flex;
         justify-content: center;
@@ -21,39 +21,39 @@
         text-align: center;
 
         h1{
+            font-family: 'Righteous', cursive;
             color: var(--white);
+            // color: rgba(var(--whiteO),0.5);
             font-size: rem-calc(40);
+            font-weight: 400;
+            margin: 0;
+            
 
             @include md{
-                font-size: rem-calc(50);
-            }
-        
-            @include lg{
-                font-size: rem-calc(90);
+                font-size: rem-calc(60);
             }
 
             span{
-                color: rgba(var(--whiteO),0.25);
+                color: var(--white);
             }
         }
-        
+
         button{
             border: none;
             background-color: var(--red);
             color: var(--white);
-            font-size: rem-calc(20);
             padding: 20px 30px;
             border-radius: 8px;
+            font-size: rem-calc(20);
             margin-top: 24px;
             cursor: pointer;
 
             @include md{
                 font-size: rem-calc(25);
-                padding: 30px 50px;
             }
 
             i{
-                margin-left: 8px;
+                margin-left: 12px;
             }
         }
     }

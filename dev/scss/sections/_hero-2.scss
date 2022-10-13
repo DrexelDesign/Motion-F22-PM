@@ -1,11 +1,10 @@
 #hero-2{
-    background-image: url("../img/heroes/hero-2.jpg");
-    background-size: cover;
-    background-position: bottom;
+    
     height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 
     @include md{
         height: 80vh;
@@ -26,7 +25,15 @@
         }
     }
 
-
-
+    #bg-img{
+        background-image: url("../img/heroes/hero-2.jpg");
+        background-size: cover;
+        background-position: bottom;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        // clip-path: inset(10% 20% 5% 17.87%);
+    }
 
 }

@@ -41,10 +41,18 @@ function boxAnimation(){
 
 
 function hikingAnimation(){
-    var tl = gsap.timeline({scrollTrigger:{trigger:"#hiking",scrub:true, markers: true, end:"top 20%", start:"top 70%"}});
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#hiking",scrub:true, markers: false, end:"top 20%", start:"top 70%"}});
     tl.from("#hiking aside div",{duration:1,scale:3,alpha:0},"peakAni")
     .from("#hiking h1",{alpha:0, y:-100,duration:1},"peakAni")
     .from("#hiking p",{alpha:0, y:-100,duration:1},"peakAni");
+    return tl;
+}
+
+function hero2Animation(){
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#hero-2", scrub: true,end:"top 40%", markers: true, start:"top 80%"}});
+
+    tl.from("#bg-img",{duration:1, clipPath:"inset(0 50%)"},"same")
+    .from("#hero-2 h1",{duration:1, scale:2, alpha:0},"same");
     return tl;
 }
 
@@ -52,4 +60,5 @@ function hikingAnimation(){
 var mainTimeline = gsap.timeline();
 mainTimeline.add(heroAnimation())
     .add(boxAnimation())
-    .add(hikingAnimation());
+    .add(hikingAnimation())
+    .add(hero2Animation());

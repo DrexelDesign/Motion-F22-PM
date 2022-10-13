@@ -1,5 +1,7 @@
-// console.log("hello class");
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 // Sets
 gsap.set("#hero h1 span",{alpha:0.25})
@@ -30,6 +32,24 @@ function heroAnimation(){
     return tl;
 }
 
+function boxAnimation(){
+    var tl = gsap.timeline({scrollTrigger:{trigger: "#box", scrub: true, start:"top 70%", end:"bottom 10%",markers: false}});
+    tl.from("#box",{duration:1, scale:2, rotation:-180, x:"-=300%"});
+    // .to("#box",{duration:1, y:400, scale:2});
+    return tl;
+}
+
+
+function hikingAnimation(){
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#hiking",scrub:true, markers: true, end:"top 20%", start:"top 70%"}});
+    tl.from("#hiking aside div",{duration:1,scale:3,alpha:0},"peakAni")
+    .from("#hiking h1",{alpha:0, y:-100,duration:1},"peakAni")
+    .from("#hiking p",{alpha:0, y:-100,duration:1},"peakAni");
+    return tl;
+}
+
 
 var mainTimeline = gsap.timeline();
-mainTimeline.add(heroAnimation());
+mainTimeline.add(heroAnimation())
+    .add(boxAnimation())
+    .add(hikingAnimation());

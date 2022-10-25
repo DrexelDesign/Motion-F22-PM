@@ -1,4 +1,4 @@
 import { gsap } from "gsap";
 
 
-gsap.to("#box",{duration:1, fill:"red"});
+gsap.to("#svgThing",{duration:1, fill:"red",x:300});

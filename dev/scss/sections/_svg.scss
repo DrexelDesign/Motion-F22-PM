@@ -1,0 +1,18 @@
+#svg{
+    display: grid;
+    grid-template-columns: auto 600px auto;
+    grid-template-areas: ". svg .";
+
+    div{
+        grid-area: svg;
+
+
+        // svg{
+
+
+            #box{
+                // fill: yellow;
+            }
+        // }
+    }
+}

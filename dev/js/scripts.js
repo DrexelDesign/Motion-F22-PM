@@ -29,6 +29,12 @@ function UIMotion(){
     var tl = gsap.timeline()
     tl.to("#pencil",{duration:0.5,x:bottomLine.width},"drawIn")
     .from("#bottom-line",{duration:0.5,drawSVG:0},"drawIn")
+    .to("#pencil",{duration:0.25, alpha:0},"drawOutline")
+    .fromTo("#outline",{drawSVG:"100% 100%"},{duration:0.5, drawSVG:"100% 0%"},"drawOutline")
+    .from("#box-bg",{duration:0.5, scaleX:0})
+    .from(".letter",{duration:0.25, alpha:0, y:20, stagger: 0.12},"-=50%")
+    .from("#glass",{duration:0.25, drawSVG:0},"-=.5")
+    .from("#handle",{duration:0.25, drawSVG:0},"-=.25")
     return tl;
 }
 

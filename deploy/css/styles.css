@@ -367,16 +367,16 @@ textarea {
 /* =============
     Motion path
 ============= */
-#motion-path {
+#clip-path {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". launch .";
+  grid-template-areas: ". clip .";
 }
 @media (min-width: 1440px) {
-  #motion-path {
+  #clip-path {
     grid-template-columns: auto 1200px auto;
   }
 }
-#motion-path > div {
-  grid-area: launch;
+#clip-path > div {
+  grid-area: clip;
 }
